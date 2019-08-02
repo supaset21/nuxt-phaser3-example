@@ -1,0 +1,30 @@
+<template>
+  <div id="game-container" v-if="downloaded" />
+  <div class="placeholder" v-else>Downloading ...</div>
+</template>
+
+
+<script>
+export default {
+  name: "Game",
+  data() {
+    return {
+      downloaded: false
+    };
+  },
+  async mounted() {
+    const game = await import(/* webpackChunkName: "game" */ "@/static/game");
+    // const game =
+    this.downloaded = true;
+    this.$nextTick(() => game.launch());
+  }
+};
+</script>
+
+
+<style >
+.placeholder {
+  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
+}
+</style>
