@@ -1,5 +1,5 @@
 {
-    "name": "tutorial-templates",
+    "name": "nuxt-phaser3-example",
     "version": "1.0.0",
     "main": "index.js",
     "license": "MIT",
