@@ -1,5 +1,3 @@
-import webpack from "webpack";
-
 module.exports = {
   head: {
     titleTemplate: "Phaser Game - %s",
