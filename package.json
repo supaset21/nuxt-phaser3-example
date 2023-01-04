@@ -9,7 +9,7 @@
         "start": "nuxt start"
     },
     "dependencies": {
-        "nuxt": "^2.8.1",
+        "nuxt": "^2.15.8",
         "phaser": "^3.18.1",
         "phaser-ce": "^2.13.2"
     }
